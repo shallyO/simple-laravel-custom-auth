@@ -33,7 +33,7 @@ class ForgotPasswordController extends Controller
 
 
 
-        return response()->json(['status' => true, 'message'=> 'new password has been sent to your email'], 200);
+        return response()->json(['status' => true, 'message'=> 'new password has been sent to your email '.$otp], 200);
 
     }
 
