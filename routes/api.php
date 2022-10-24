@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::post('user/register', 'Auth\RegisterController@create');
 Route::post('user/verify-otp', 'Auth\VerifyOtpController@verifyOtp');
 Route::post('user/login', 'Auth\LoginController@login');
+Route::post('user/reset-password', 'Auth\ForgotPasswordController@resetUserPassword');
+
